@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="5.0">
+	<display-name>GetMechanic</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>mainController</display-name>
+		<servlet-name>mainController</servlet-name>
+		<servlet-class>project.getMechanic.mainController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainController</servlet-name>
+		<url-pattern>/mainController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>customerController</display-name>
+		<servlet-name>customerController</servlet-name>
+		<servlet-class>project.getMechanic.customerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerController</servlet-name>
+		<url-pattern>/customerController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>mechanicController</display-name>
+		<servlet-name>mechanicController</servlet-name>
+		<servlet-class>project.getMechanic.mechanicController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mechanicController</servlet-name>
+		<url-pattern>/mechanicController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>databaseModel</display-name>
+		<servlet-name>databaseModel</servlet-name>
+		<servlet-class>project.getMechanic.databaseModel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>databaseModel</servlet-name>
+		<url-pattern>/databaseModel</url-pattern>
+	</servlet-mapping>
+</web-app>
